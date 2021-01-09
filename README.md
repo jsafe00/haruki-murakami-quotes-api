@@ -36,5 +36,5 @@ Host Name: 127.0.0.1
 Port: 5434
 Database:postgres
 Username:postgres
-Password:postgres
+Password:secret
 ```
