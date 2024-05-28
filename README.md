@@ -11,9 +11,19 @@ docker-compose build
 ```
 docker-compose up -d
 ```
+
 ```
-docker-compose exec -it {container_name_api} bash
+docker-compose exec quotes_api bash
 ```
+
+```
+cp .env.example .env
+```
+
+```
+composer install
+```
+
 ```
 php artisan migrate
 ```
