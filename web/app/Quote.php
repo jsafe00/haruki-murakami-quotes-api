@@ -6,8 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Quote extends Model
 {
+    protected $fillable = [
+        'text', 
+        'book_id'
+    ]; 
+
     /**
-     * Get the author that owns the quote.
+     * Get the book that owns the quote.
      */
     public function book()
     {

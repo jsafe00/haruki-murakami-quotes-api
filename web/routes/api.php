@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::prefix('v1')->group(function () {
-    Route::apiResource('quotes', 'QuoteController', ['only' => 'index']);
+    Route::apiResource('quotes', QuoteController::class);
 });
