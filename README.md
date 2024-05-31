@@ -52,3 +52,15 @@ Database:postgres
 Username:postgres
 Password:secret
 ```
+
+Add laravel passport
+
+```
+composer require laravel/passport
+php artisan passport:install
+
+//if needed
+php artisan refresh:migrate
+php artisan db:seed
+php artisan passport:keys
+```

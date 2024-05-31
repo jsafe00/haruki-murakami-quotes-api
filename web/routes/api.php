@@ -15,5 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::prefix('v1')->group(function () {
-    Route::apiResource('quotes', QuoteController::class);
+    // Login and Register routes
+    Route::post('login', 'Auth\LoginController@login');
+    Route::post('register', 'Auth\RegisterController@register');
+
+    // HM Quotes
+    Route::middleware('auth:api')->group(function () {
+        Route::apiResource('quotes', QuoteController::class);
+    });
 });
