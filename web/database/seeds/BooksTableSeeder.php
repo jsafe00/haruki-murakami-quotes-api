@@ -40,5 +40,35 @@ class BooksTableSeeder extends Seeder
             'title' => 'The Wind Up Bird Chronicle',
             'image' => 'the-wind-up-bird-chronicle.jpg'
         ]);
+
+        \App\Book::create([
+            'title' => 'South of the Border, West of the Sun',
+            'image' => 'south-of-the-border.jpg'
+        ]);
+
+        \App\Book::create([
+            'title' => 'Dance Dance Dance',
+            'image' => 'dance.jpeg'
+        ]);
+
+        \App\Book::create([
+            'title' => 'Blind Willow, Sleeping Woman',
+            'image' => 'blind-willow.jpeg'
+        ]);
+
+        \App\Book::create([
+            'title' => 'After Dark',
+            'image' => 'after-dark.jpeg'
+        ]);
+
+        \App\Book::create([
+            'title' => '1Q84',
+            'image' => '1Q84.jpeg'
+        ]);
+
+        \App\Book::create([
+            'title' => 'Hard-Boiled Wonderland and the End of the World',
+            'image' => 'hard-boiled-wonderland.jpeg'
+        ]);
     }
 }
